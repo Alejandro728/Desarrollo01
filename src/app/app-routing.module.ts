@@ -11,8 +11,8 @@ import { ViewComponent } from './view/view.component';
 const routes: Routes = [
 
   {
-    path: 'Home',
-    component: HomeComponent
+    path: '',
+    component: LoginComponent
   },
   {
     path: 'ProductEdit',
@@ -31,8 +31,8 @@ const routes: Routes = [
     component: ViewComponent
   },
   {
-    path: 'Login',
-    component: LoginComponent
+    path: 'Home',
+    component: HomeComponent
   }
 
 ];

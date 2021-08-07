@@ -18,4 +18,10 @@ export class LoginComponent implements OnInit {
     this.router.navigate(["home"]);
   }
 
+  user_login()
+  {
+    this.router.navigate(['/EditProduct']);
+  }
+
+
 }

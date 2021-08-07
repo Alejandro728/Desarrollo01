@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { NavbarService } from 'src/navbar.service';
 import { Product } from '../Model/Product';
 
 @Component({
@@ -9,9 +10,11 @@ import { Product } from '../Model/Product';
 })
 export class EditComponent implements OnInit {
   products: Product[] = [];
-  constructor(private router:Router) { }
+  constructor(public nav:NavbarService, private router:Router) { }
 
   ngOnInit(): void {
+    this.nav.show();
+    this.nav.doSomethingElseUseful();
   }
 
     Edit():void{
